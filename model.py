@@ -23,7 +23,7 @@ from BilinearUpSampling import BilinearUpSampling2D
 
 def fc_vgg16(filters=4096, weight_decay=0., block_name='block5'):
     '''
-    Add two fully connected layer to the model
+    Add fully connected layer to the model
     '''
     def f(x):
         x = Conv2D(filters=filters,
